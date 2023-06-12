@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY MANAGEMENT SYSTEM</title>
+</head>
+<body>
+    <div class="wrap">
+        <section><br><br>
+          <h1 style="color: white;margin-top: 3px;">LIBRARY MANAGEMENT SYSTEM</h1>
+            <nav style="margin-top: -25px;">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="userlogin.html">LOGOUT</a></li>
+                </ul>
+            </nav>
+            <a style="color: aqua; margin-top: 100px;display: flex; margin-left: 1090px;text-decoration: none;" href="preview.html">BOOK PREVIEW</a>
+            <div id="filters">
+                <h2 style="color: rgb(59, 208, 139); margin-top: -10px; margin-left: 40px;">Filters</h2>
+                <input style="margin-left: 150px;" type="text" id="title-filter" placeholder="Title">
+                <small style="color: white;">Total: <span id="title-count">0</span></small>
+                <input type="text" id="author-filter" placeholder="Author">
+                <small style="color: white;">Total: <span id="author-count">0</span></small>
+                <input type="text" id="subject-filter" placeholder="Subject">
+                <small style="color: white;">Total: <span id="subject-count">0</span></small>
+                <input style="margin-left: 300px;" type="text" id="start-date-filter" placeholder="Start Date (YYYY-MM-DD)">
+                <input type="text" id="end-date-filter" placeholder="End Date (YYYY-MM-DD)">
+                <small style="color: white;">Total: <span id="publish-date-count">0</span></small>
+                <button style="color:black;background-color: dodgerblue;margin-left: 570px;margin-top: -40px;margin-bottom: 20px;" onclick="applyFilters()">Apply Filters</button>
+                
+            </div>
+              
+              <div id="book-list">
+                <h1 style="color: rgb(255, 255, 255); margin-left: 550px; font-size: 30px;">Book List</h1>
+                <table id="book-table">
+                  <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Subject</th>
+                    <th>Publish Date</th>
+                  </tr>
+                </table>
+                <div id="pagination"></div>
+              </div>
+            
+        </section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY MANAGEMENT SYSTEM</title>
+</head>
+<body>
+    <div class="wrap">
+        <section>
+            <br>
+            <h1 style="color: white;margin-top: 8px;">LIBRARY MANAGEMENT SYSTEM</h1>
+            <nav style="margin-top: -25px;">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="userlogin.html">USER_LOGIN</a></li>
+                    <li><a href="adminlogin.html">ADMIN_LOGIN</a></li>
+                </ul>
+            </nav>
+            <div style="margin-top: 80px;" class="box1">
+                <h1 style="text-align: center;">SIGNUP PAGE</h1>
+                <form name="login" action="userlogin.html">
+                    <div class="login">
+                        <input type="text" name="firstname" placeholder="FIRSTNAME" id=""><br><br>
+                        <input type="text" name="lastname" placeholder="LASTNAME" id=""><br><br>
+                        <input type="email" name="email" placeholder="EMAIL" id=""><br><br>
+                        <input type="tel" name="nmbrone" id="nmbrone" pattern="+91[7-9]{1}[0-9]{9}" value="+91" placeholder="+919887654123"><br><br>
+                        <input type="password" name="password" placeholder="PASSWORD" id=""><br><br>
+                        <input type="password" name="confirmpassword" placeholder="CONFIRM PASSWORD" id=""><br><br>
+                        <button onclick="displayAlert()">SIGN-UP</button><br><br>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+    </div>
+<script>
+    function displayAlert(){
+        alert ("Signedup Successfully");
+    }
+</script>
+</body>
+</html>

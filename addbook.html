@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY MANAGEMENT SYSTEM</title>
+</head>
+<body>
+    <div class="wrap">
+        <section><br><br>
+            <h1 style="color: white;margin-top: -10px;">LIBRARY MANAGEMENT SYSTEM</h1>
+            <nav>
+                <ul>
+                    <li><a  href="index.html">HOME</a></li>
+                    <li><a  href="adminlogged.html">BACK</a></li>
+                </ul>
+            </nav>
+            <div style="margin-top: 100px;" class="add-book-form">
+                <h2>Add Book</h2>
+                <input type="text" id="bookTitle" placeholder="Title"><br><br>
+                <input type="text" id="bookAuthor" placeholder="Author"><br><br>
+                <input type="text" id="bookSubject" placeholder="Subject"><br><br>
+                <input type="text" id="bookPublishDate" placeholder="Publish Date"><br><br>
+                <button type="button" id="addBookButton" onclick="addBook()">Add Book</button>
+            </div>
+        </section>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
